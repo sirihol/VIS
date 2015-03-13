@@ -1,0 +1,17 @@
+{
+  "name": "VIS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sirihol/VIS",
+  "authors": [
+    "rix1 <rikardeide@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
