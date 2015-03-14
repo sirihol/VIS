@@ -3,178 +3,214 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
-  <title>Dark layout w/sidebar drawer menu</title>
+  <title>Terror Data Visualization</title>
   <meta name="generator" content="Bootply" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
 
 
       
-       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-         <div class="container">
-           <div class="navbar-header">
-             <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-             </button>
-           </div>
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+       <div class="container">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
          </div>
        </div>
+     </div>
      
 
 
 
-      <link href="css/styles.css" rel="stylesheet">
-    </head>
-    <body>
-      <div class="page-container">
+     <link href="css/styles.css" rel="stylesheet">
+   </head>
+   <body>
+    <div class="page-container">
 
-        <link rel="stylesheet" href="css/fullsizable.css">
+      <link rel="stylesheet" href="css/fullsizable.css">
 
-    <div class="container">
-      <div class="row row-offcanvas row-offcanvas-left">
+      <div class="container">
+        <div class="row row-offcanvas row-offcanvas-left">
 
-        <!-- sidebar -->
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-          <div data-spy="affix" data-offset-top="45" data-offset-bottom="90">
-            <ul class="nav" id="sidebar-nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#The dataset">The dataset</a></li>
-              <li><a href="#Visual Queries">Visual Queries</a></li>
-              <li><a href="#The Design Process">The Design Process</a></li>     
-              <li><a href="#Finished Design">Finished Design</a></li>
-              <li><a href="#Discussion">Discussion</a></li>
-              <li><a href="#Conclusion And Further Work">Conclusion And Further Work</a></li>
-              <li><a href="#Visualization Contributors">Visualization Contributors</a></li>     
-            </ul>
-          </div>
-        </div>
-
-        <!-- main area -->
-
-
-        <div class="col-xs-12 col-sm-9" data-spy="scroll" data-target="#sidebar-nav">
-          <h1 id="Header">Terror Visualization</h1>
-
-          <blockquote>
-            <p><em>The greatest value of a picture is when it forces us to notice what we never expected to see. <br>- John W. Tukey</em></p>
-          </blockquote>
-
-          <p>This website cover the work from the project in the module Visual Thinking and Visualization at the Department of Computer Science, UCT fall 2015. For the project we chose to do a visualization of terror. Terrorism is a subject that moves the whole world and therefore a  highly relevant subject to do a data visualization of.</p>
-
-          <h2 id="The dataset">The dataset</h2>
-          <p>Our visualization is using a dataset that comes from the National Consortium for the Study of Terrorism and Responses to Terrorism's (START) <a href="http://www.start.umd.edu/gtd">Global Terrorism Database</a> (GTD), which includes information on terrorist events around the world from 1970 through 2013. “It is currently the most comprehensive unclassified database on over 125,000 terrorist events”.<p/>
-
-            <p>Each of the events consist attributes like date, location, the number of people who were killed and wounded, which weapon that was use, who the target was and many other attributes. Some of the events have up to 134 attributes.</p> 
-
-            <p>The dataset has been made reason about before using the data in order to be able to answer our visual queries. In many cases the value of the attributes were null or inconsistent, that is why we have focused on the events that had most of the events. Another thing that is worth noticing is that in 1993 GTD provides no data, due to <a href="http://www.start.umd.edu/gtd/about/History.aspx">loss of data</a> in an office move. </p>
-
-            <h2 id="Visual Queries">Visual Queries</h2>
-            <ul> 
-              <li><span>How many terror incidents have happened each year?</span></li>
-              <li><span>How many people are killed yearly in terror incidents?</span></li>
-               <li><span>Have the number of terror incidents increased?</span></li>
-               <li><span>Are more people being killed in terror incidents now than earlier?</span></li>
-               <li><span>Where in the world is the highest level of terrorist acts?</span></li> 
-             </ul>      
-
-            <h2 id="The design process">The design process</h2>
-
-            <p>The design process in this visualization project consists of the search, which is where we have been analysing other visualizations of terror or similar or similar subjects. Next step is the exploration, which is where we have played around with the data, sketched and designed a draft solution. We presented the first solution in a prototype evaluation and got suggested improvements for our visualization. The last part is the improvement part where we have taken the feedback into consideration and finalised our visualization.  </p>
-
-            <h3 id="The Search">The Search</h3>
-
-            <p>When doing an visualization it is really important to do a thorough analysis of existing visualizations to get a feeling of what is working and what is not. We have found three other visualization that we have taken a lot of inspiration from, and which we will present here. See <a href="background.html#">Background Research</a> for the analysis.</p>
-
-
-            <h3 id="Exploration">Exploration</h3>
-
-            <p/>Initially we did not have any concrete problem that we wanted to solve, this made it more complicated to decide upon what data we wanted to present, therefore also how we wanted to present it. After looking at and analysing existing visualizations we decided that we wanted to improve the ability to compare different terror groups activities, and not work with maps explicitly. In this design we decided to put all of the terror groups alphabetically and present when they have been active on a timeline as well as some information on how many they have killed and wounded.</p>
-
-            <a href="img/TimelineFirst.jpg" class="fullsizable" alt="Responsive image">
-            <img alt="First" class="img-responsive" src="img/TimelineFirst.jpg"></a>
-
-            <p class="text-center"><i>Figure 1: Picture of our first design iteration (click image to view large)</i></p> 
-
-            <p>As it is there it is hard to see when the groups were active so we decided to arrange them by when they were active better than alphabetically. We also changed the color by where in the world the groups are from, so that blue means that the group is from Europe etc. The timeline has been made more clear by increasing the size of some years.</p>
-
-            <a href="img/TimelineSecond.jpg" class="fullsizable" alt="Responsive image">
-              <img alt="First" class="img-responsive" src="img/TimelineSecond.jpg">
-            </a>
-
-            <p class="text-center"><i>Figure 2: Second iteration (click image to view large)</i> </p>
-
-            <p>After this iteration we discovered that by using the data from the 25 biggest terrorist groups we only cover 56% of total fatalities. We decided to not focus on the groups and rather focus on regions. This is what we presented in the prototype evaluation. It focuses on different regions and representing the number of killed and wounded as well as the number of incidents per month per year.</p>
-            
-            <a href="img/prototype.jpg" class="fullsizable" alt="Responsive image">
-            <img alt="prototype" class="img-responsive" src="img/prototype.jpg"></a>
-
-            <p class="text-center"><i>Figure 3: Third iteration and first prototype (click image to view large)</i><p/>
-
-              <h3 id="Changes">Changes</h3>
-              <p>During the design process we have had one prototype evaluation in the class, where we presented our design and got suggested changes that we could make. We got a lot of good ideas from this session and this is hopefully reflected in the final design.
-
-                <h4 id="">Shneiderman's mantra</h4>
-                <p>We have used the Shneiderman's mantra in regards to interactivity, by adding more aggregated worldview information for the overview. We decided to add a map of the world along with a timeline where you can see the total number of incidents per year, as well as the number of wounded per year, we have added a slider on the timeline for further exploration.  The map is reflecting which countries that are attacked for the period that is chosen on the timeline. The slider on the timeline works well as a zoom and filter function. We also want the feature of selecting a specific region and then that region is added to the dashboard for further data exploration and details on demand.</p> 
-
-                <p>For more details on demand we want to add another suggested change that we got from the prototype evaluation, a frame of reference. For instance marking 9/11 with a specific symbol. Here we also played with the idea of when you hover over a “landmark” symbol everything that is lower than that will be grayed out and then you can see other events that were greater than that “famous” event.</p>
-
-                <h4 id="">Symbols</h4>
-                <p>Another improvement that we have added are symbols. We have added symbols for the frame of reference feature representing different target types or landmarks that reflect that terror incident. We have also changed from intensity to shapes when representing the number of incidents per month. <p>
-
-                  <h2 id="">Finished design</h2>
-
-                  <h2 id="">Discussion</h2>
-
-                  <h3 id="">Strengths</h3>
-
-                  <h3 id="">Weaknesses</h3>
-
-                  <h3 id="">Difficulties Encountered</h3>
-
-                  <h2 id="">Conclusion and further work</h2>
-
-                  <h2 id="">Visualization Contributors</h2>
-
-                  <h4 id="">Siri Holtnæs</h4>
-
-                  <h4 id="">Rikard Eide</h4>
-
-                </div><!-- /.col-xs-12 main -->
-              </div><!--/.row-->
-            </div><!--/.container-->
-          </div><!--/.page-container-->
-
-
-
-          <div id="footer"><!--footer-->
-            <div class="container">
-             <div class="row">
-              <ul class="list-unstyled">
-                <li class="col-sm-4 col-xs-6">
-                  <a href="background.html#">Background research</a>
-                </li>
-                <li class="col-sm-4 col-xs-6">
-                  <a href="#">References</a>
-                </li>
-                <li class="col-sm-4 col-xs-6">
-                  <a href="http://people.cs.uct.ac.za/~mkuttel/VisProjects2013.html">Similar projects</a>
-                </li>
+          <!-- sidebar -->
+          <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+            <div data-spy="affix" data-offset-top="45" data-offset-bottom="90">
+              <ul class="nav" id="sidebar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#The dataset">The dataset</a></li>
+                <li><a href="#Visual Queries">Visual Queries</a></li>
+                <li><a href="#The Design Process">The Design Process</a></li>     
+                <li><a href="#Finished Design">Finished Design</a></li>
+                <li><a href="#Discussion">Discussion</a></li>
+                <li><a href="#Conclusion And Further Work">Conclusion And Further Work</a></li>
+                <li><a href="#Visualization Contributors">Visualization Contributors</a></li>     
               </ul>
-            </div><!--/row-->
+            </div>
+          </div>
 
-          </div><!--/container-->
-        </div><!--/footer-->
+          <!-- main area -->
 
-        <!-- script references -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <script src="js/jquery.fullsizable.2.0.2.min.js"></script>
 
-      </body>
-      </html>
+          <div class="col-xs-12 col-sm-9" data-spy="scroll" data-target="#sidebar-nav">
+            <h1 id="Header">Terror Visualization</h1>
+
+            <blockquote>
+              <p><em>The greatest value of a picture is when it forces us to notice what we never expected to see. <br>- John W. Tukey</em></p>
+            </blockquote>
+
+            <p>This website cover the work from the project in the module Visual Thinking and Visualization at the Department of Computer Science, UCT fall 2015. For the project we chose to do a visualization of terror. Terrorism is a subject that moves the whole world and therefore a  highly relevant subject to do a data visualization of.</p>
+
+            <h2><i class="fa fa-bar-chart"></i><span class="break"></span>The dataset</h2>
+            <p>Our visualization is using a dataset that comes from the National Consortium for the Study of Terrorism and Responses to Terrorism's (START) <a href="http://www.start.umd.edu/gtd">Global Terrorism Database</a> (GTD), which includes information on terrorist events around the world from 1970 through 2013. “It is currently the most comprehensive unclassified database on over 125,000 terrorist events”.<p/>
+
+              <p>Each of the events consist attributes like date, location, the number of people who were killed and wounded, which weapon that was use, who the target was and many other attributes. Some of the events have up to 134 attributes.</p> 
+
+              <p>The dataset has been made reason about before using the data in order to be able to answer our visual queries. In many cases the value of the attributes were null or inconsistent, that is why we have focused on the events that had most of the events. Another thing that is worth noticing is that in 1993 GTD provides no data, due to <a href="http://www.start.umd.edu/gtd/about/History.aspx">loss of data</a> in an office move. </p>
+
+
+               <h2><i class="fa fa-eye"></i><span class="break"></span>Visual Queries</h2>
+              <ul> 
+                <li><span>How many terror incidents have happened each year?</span></li>
+                <li><span>How many people are killed yearly in terror incidents?</span></li>
+                <li><span>Have the number of terror incidents increased?</span></li>
+                <li><span>Are more people being killed in terror incidents now than earlier?</span></li>
+                <li><span>Where in the world is the highest level of terrorist acts?</span></li> 
+              </ul>      
+
+              <h2><i class="fa fa-cog"></i><span class="break"></span>The Design Process</h2>
+
+              <p>The design process in this visualization project consists of the search, which is where we have been analysing other visualizations of terror or similar or similar subjects. Next step is the exploration, which is where we have played around with the data, sketched and designed a draft solution. We presented the first solution in a prototype evaluation and got suggested improvements for our visualization. The last part is the improvement part where we have taken the feedback into consideration and finalised our visualization.  </p>
+
+              <h2><i class="fa fa-search"></i><span class="break"></span>The Search</h2>
+
+              <p>When doing an visualization it is really important to do a thorough analysis of existing visualizations to get a feeling of what is working and what is not. We have found three other visualization that we have taken a lot of inspiration from, and which we will present here. </p>
+
+              <y><h3 id="Global Terrorism Visualization"> Global Terrorism Visualization</h3></y>
+              <p>For inspiration for our overview of the data we looked at a visualization that is called <a href="http://cse512-14w.github.io/a3-chaoyu-aniket/">Global Terrorism Visualization</a> and was made by Chaoyu Yang and Aniket Handa who have developed a application for exploring the trends and events that shaped the history due to Terrorism. Their visualization consists of a map view together with a bar chart graph of the total number of killed per year as well as a more detailed view of countries.</p>
+
+              <a href="img/gtv.jpg" class="fullsizable" alt="Responsive image">
+               <a href="img/gtv.jpg" class="fullsizable" alt="Responsive image">
+                <img alt="gtv" class="img-responsive" src="img/gtv.jpg"></a>
+
+
+                <p class="text-center"><i>Figure 2: Global Terrorism Visualization, a vizualization by Chaoyu Yang and Aniket Handa.</i></p> 
+
+                <h4 id="">Color</h4>
+                Different saturations of red where the intensity represent higher quantity works good to represent the number of killed. It can be difficult to compare two countries that have the same color, but in this case there is the possibility of hovering over specific countries for more precise information. The color of the bar chart that represents the number of killed works really well. When the number is high the color of the bar is darker as well as the size is bigger, this makes it easy to answer visual queries like “have the number of killed in terror incidents increased the last 20 years?”.<p/>
+
+                <h4 id="">Exploration</h4>
+                <p>The ability to explore the data is done well in this visualization. You both have the opportunity to focus the timeline as well as choosing different countries to explore further or compare to others. We have used this in our design, but with regions instead of countries. </p>
+                <h3 id="A World of Terror"> A World of Terror</h3>
+                <p><a href="http://terror.periscopic.com/">A World of Terror</a> is a graphical look at the 25 most impactful terrorist organizations since 1970. This visualization was made by <a href="http://www.periscopic.com/">Periscopic</a>, and is using the same data that we are using from GTD.</p>
+
+                <a href="img/wot.jpg" class="fullsizable" alt="Responsive image">
+                  <img alt="wot" class="img-responsive" src="img/wot.jpg"></a>
+
+
+                  <p class="text-center"><i>Figure 1: A World of Terror, a vizualization by Periscopic.</i></p> 
+
+
+                  <h4 id="">Space, grouping and shape </h4>
+                  <p>The visualization presents a lot of information at once, by showing all the data at one single page. They have made this possible by grouping the different groups on the right hand side, while having a panel with further information on the left hand side. They also the possibility of grouping the different terror groups by various attributes, for instance by “longest active group”. By doing so they have made it possible for the user to get an overview while having the opportunity to zoom and filter. What we found hard in this grouping, was to compare groups that have approximately the same “impact”. The use of a mini map to show where in the world the different attacks have been is also a good feature.</p> 
+
+                  <p>Each terrorist group consists of a rectangle where both dimensions represent time. The width is a timeline from 1970 to 2013, and the height stretches from December to January. Weirdly enough it is not the other from January to December. The number of incident is represented by a gray square in the given month of the specific given year. The intensity of the square indicates the number of incidents in that given month.Above and below the incident rectangle they have placed colored bar charts indicating the total number of victims in a given year - killed above and wounded below. We found this hard to compare and have tried to improve in our design. </p>
+
+                  <h4 id="">Color</h4>
+
+                  <p>The visualization uses a brown color theme, with red and yellow as contrast colors to highlight some information and make it pop slightly out. By using red and yellow whom are both close to brown (they are each side of brown on the color scale), this contrast gets well balanced and the page as a whole is visually appealing to look at. Red is used to represent the number of killed while yellow is used to represent the number of wounded, this makes sense in both cases, as red is often a symbol of danger while yellow can be a symbol of near danger.</p>
+
+
+              <h2><i class="fa fa-binoculars"></i><span class="break"></span>Exploration</h2>
+
+                  <p/>Initially we did not have any concrete problem that we wanted to solve, this made it more complicated to decide upon what data we wanted to present, therefore also how we wanted to present it. After looking at and analysing existing visualizations we decided that we wanted to improve the ability to compare different terror groups activities, and not work with maps explicitly. In this design we decided to put all of the terror groups alphabetically and present when they have been active on a timeline as well as some information on how many they have killed and wounded.</p>
+
+                  <a href="img/TimelineFirst.jpg" class="fullsizable" alt="Responsive image">
+                    <img alt="First" class="img-responsive" src="img/TimelineFirst.jpg"></a>
+
+                    <p class="text-center"><i>Figure 3: Picture of our first design iteration (click image to view large)</i></p> 
+
+                    <p>As it is there it is hard to see when the groups were active so we decided to arrange them by when they were active better than alphabetically. We also changed the color by where in the world the groups are from, so that blue means that the group is from Europe etc. The timeline has been made more clear by increasing the size of some years.</p>
+
+                    <a href="img/TimelineSecond.jpg" class="fullsizable" alt="Responsive image">
+                      <img alt="First" class="img-responsive" src="img/TimelineSecond.jpg">
+                    </a>
+
+                    <p class="text-center"><i>Figure 4: Second iteration (click image to view large)</i> </p>
+
+                    <p>After this iteration we discovered that by using the data from the 25 biggest terrorist groups we only cover 56% of total fatalities. We decided to not focus on the groups and rather focus on regions. This is what we presented in the prototype evaluation. It focuses on different regions and representing the number of killed and wounded as well as the number of incidents per month per year.</p>
+
+                    <a href="img/prototype.jpg" class="fullsizable" alt="Responsive image">
+                      <img alt="prototype" class="img-responsive" src="img/prototype.jpg"></a>
+
+                      <p class="text-center"><i>Figure 5: Third iteration and first prototype (click image to view large)</i><p/>
+
+                   <h2><i class="fa fa-refresh"></i><span class="break"></span>Changes</h2>
+                        <p>During the design process we have had one prototype evaluation in the class, where we presented our design and got suggested changes that we could make. We got a lot of good ideas from this session and this is hopefully reflected in the final design.
+
+                          <h4 id="">Shneiderman's mantra</h4>
+                          <p>We have used the <a href="http://www.infovis-wiki.net/index.php/Visual_Information-Seeking_Mantra">Shneiderman's mantra</a> in regards to interactivity, by adding more <x>aggregated worldview</x> information for the overview. We decided to add <x>a map of the world</x> along with a timeline where you can see the <x>total numbers</x> of incidents per year, as well as the number of dead and wounded per year, we have added a slider on the timeline for further exploration.  The map is reflecting which countries that are attacked for the period that is chosen on the timeline. The slider on the <x>timeline works well as a zoom and filter function</x>. We also want the feature of <x>selecting a specific region</x> and then that region is added to the dashboard for further data exploration and <x  >details on demand<x/>.</p> 
+
+                          <p>For more details on demand we want to add another suggested change that we got from the prototype evaluation, a <x>frame of reference</x>. For instance marking 9/11 with a specific symbol. Here we also played with the idea of when you hover over a “landmark” symbol everything that is lower than that will be grayed out and then you can see other events that were greater than that “famous” event.</p>
+
+                          <h4 id="">Symbols</h4>
+                          <p>Another improvement that we have added are <x>symbols</x>. We have added symbols for the frame of reference feature representing different target types or landmarks that reflect that terror incident. We have also changed from intensity to <x>shapes</x> when representing the number of incidents per month. <p>
+
+                            <h2><i class="fa fa-trophy"></i><span class="break"></span>Finished design</h2>
+
+                            <h2><i class="fa fa-comments"></i><span class="break"></span>Discussion</h2>
+                          
+                            <h3><i class="fa fa-thumbs-o-up"></i><span class="break"></span>Strengths</h3>
+
+                            <h3><i class="fa fa-thumbs-o-down"></i><span class="break"></span>Weaknesses</h3>
+
+                            <h3><i class="fa fa-question"></i><span class="break"></span>Difficulties Encountered</h3>
+
+                            <h2><i class="fa fa-flag-o"></i><span class="break"></span>Conclusion and further work</h2>
+
+                            <h2><i class="fa fa-user"></i><span class="break"></span>Visualization Contributors</h2>
+
+                            <h4 id="">Siri Holtnæs</h4>
+
+                            <h4 id="">Rikard Eide</h4>
+
+                          </div><!-- /.col-xs-12 main -->
+                        </div><!--/.row-->
+                      </div><!--/.container-->
+                    </div><!--/.page-container-->
+
+
+
+                    <div id="footer"><!--footer-->
+                      <div class="container">
+                       <div class="row">
+                        <ul class="list-unstyled">
+                          <li class="col-sm-4 col-xs-6">
+                            <a href="background.html#">Background research</a>
+                          </li>
+                          <li class="col-sm-4 col-xs-6">
+                            <a href="finaldesign.html">Final Design</a>
+                          </li>
+                          <li class="col-sm-4 col-xs-6">
+                            <a href="http://people.cs.uct.ac.za/~mkuttel/VisProjects2013.html">Similar projects</a>
+                          </li>
+                        </ul>
+                      </div><!--/row-->
+
+                    </div><!--/container-->
+                  </div><!--/footer-->
+
+                  <!-- script references -->
+                  <script src="js/jquery.min.js"></script>
+                  <script src="js/bootstrap.min.js"></script>
+                  <script src="js/scripts.js"></script>
+                  <script src="js/jquery.fullsizable.2.0.2.min.js"></script>
+
+                </body>
+                </html>
