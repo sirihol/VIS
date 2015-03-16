@@ -61,13 +61,7 @@
                             <a href="#final">Final design</a>
                             <ul class="nav nav-stacked">
                                 <li><a href="#final-functionality">Functionality</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#discussion">Discussion</a>
-                            <ul class="nav nav-stacked">
                                 <li><a href="#discussion-pros">Strengths</a></li>
-
                                 <li><a href="#discussion-cons">Weaknesses</a></li>
                                 <li><a href="#discussion-problems">Problems Encountered</a></li>
                             </ul>
@@ -109,10 +103,7 @@
                     Terrorism and Responses to Terrorism's (START) <a href="http://www.start.umd.edu/gtd">Global
                         Terrorism Database</a> (GTD), which includes information on terrorist events around the world
                     from 1970 through 2013. “It is currently the most comprehensive unclassified database on over
-                    125,000 terrorist events”
-                    <small><a
-                            href="#1">[1]</a></small>
-                    .
+                    125,000 terrorist events”.
                 <p/>
 
                 <p>Each of the events consist attributes like date, location, the number of people who were killed and
@@ -318,6 +309,7 @@
                     which is hopefully reflected in the final design.</p>
                 <h4 id="changes-mantra">Shneiderman's mantra</h4>
 
+
                 <p>We have used the <a href="http://www.infovis-wiki.net/index.php/Visual_Information-Seeking_Mantra">Shneiderman's
                     mantra</a> in regards to interactivity, by adding more
                     <span class="red">aggregated worldview</span>
@@ -334,17 +326,16 @@
                     . When doing so we display more information about it below the main visualization, using a view
                     similar to the one from our third iteration. Because this was intended for the web, we imagined an
                     "article view" which allows the interested user to dig even deeper. This gives the visualization
-                    both a narrative, and more
-                    <span class="red">details on demand</span>
+                    both a narrative, and more <span class="red">details on demand</span>
                     .
                 </p>
+
+
 
                 <p>For more details on demand we want to add another suggested change that we got from the prototype
                     evaluation, a
                     <span class="red">frame of reference</span>
-                    . For instance marking 9/11 with a specific symbol. Here we also played with the idea of when you
-                    hover over a “landmark” symbol everything that is lower than that will be grayed out and then you
-                    can see other events that were greater than that “famous” event.
+                    For instance marking 9/11 with a specific symbol. Here we also played with the idea of when you hover over a “landmark” symbol everything that is lower than that will be grayed out and then you can see other events that were greater than that “famous” event. We did not end up with this functionality.
                 </p>
 
                 <h4 id="changes-symbols">Symbols</h4>
@@ -365,6 +356,8 @@
                 <p class="text-center"><i>Figure 5: Second iteration
                     <small>(click image to view large)</small>
                 </i></p>
+
+                <p class="text-center"><i>Figure 7: Symbols for target type <small>(click image to view large)</small></i> </p>
 
 
                 <h2 id="final"><i class="fa fa-trophy"></i><span class="break"></span>Final design</h2>
@@ -423,48 +416,49 @@
 
                     <h3 id="final-functionality"></span>Functionality</h3>
 
-                    <h4>Overview</h4>
 
                 </div>
 
-
-                <p>Graph with total number of incidents per year.</p>
-
-                <p>Map of the world, where the saturation determine the number of incidents per region. </p>
-
-                <p>Total numbers of killed and wounded per year as well as total number.</p>
+                <h4>Overview</h4>
+                <p>I our final design we have focused on getting a better overview than we did in the prototype. By adding a graph with total number of incidents per year, one can easily see the trends, and answer questions like, "Were there more terror incidents in 2013 than in 1978?". The total number of killed and wounded per year is also added to the graph. Then you can answer if there were more people wounded in 2013 than in 2001. We have also added the total number of killed and wounded at the top. A Map of the world shows you the number of incidents per region, where the saturation determine the number of incidents.  </p>
 
                 <h4>Zoom and filter</h4>
 
-                <p>Ability to change the timeline, and the number of incidents per region(color on the map will) will
-                    change. The number of total killed and wounded will also change when the timeline changes. </p>
-
-                <p>Select region for more information of it. Information about number of killed and wounded in that
-                    region based on year. As well as number of incidents per per months per year. The graph of the
-                    region is added to the panel, below the map. </p>
+                <p>We have added the ability to dynamically change the timeline, then the number of incidents per region(color on the map will) will change. For instance you can see from 1970 to 2013 or you could filter out 1980 to 1950. The total number of total killed and wounded will also change when the timeline changes. When you select a region, you will get more information of that region. Another graph (like the one we made in the prototype) is added to the panel, below the map. Information about the number of killed and wounded in that region is shown in the graph, as well as the umber of incidents per months per year. </p>
 
                 <h4>Details on demand</h4>
 
-                <p>The main graph has some symbols placed above peaks. When you press those symbols you will get an
-                    overview of the biggest or most famous event that contributed to that peak. Then if you press the
-                    specific incident you will get further information about that incident in a box to the left. The
-                    information includes the number of killed and wounded, who did it and who the target was. By doing
-                    this, we (finally) get to include countries without having to display them all. The target is
-                    denoted by symbols representing the target. We have included the most common target types, see
-                    Figure X.</p>
+                <p>The main graph has some symbols placed above peaks. When you press those symbols you will get an overview of the biggest or most famous event that contributed to that peak. Then if you press the specific incident you will get further information about that incident in a box to the left, as well as a location on the map. The information includes the number of killed and wounded, who did it and who the target was.By doing this, we (finally) got to include countries without having to display them all. The target is denoted by symbols representing the target. We have included the most common target types, see Figure 7.</p>
 
-                <h2 id="discussion"><i class="fa fa-comments"></i><span class="break"></span>Discussion</h2>
-
-                <p>Introduction to comments</p>
 
                 <h3 id="discussion-pros"><i class="fa fa-thumbs-o-up"></i><span class="break"></span>Strengths</h3>
 
-                <p>list??</p>
+                <ul>
+                    <li><span>Good overview. </span></li>
+                    <li><span>We show a lot of data on a single site. </span></li>
+                    <li><span>Easy to do fast queries on terrorism trends on an overview level.  </span></li>
+                    <li><span>Showing real data. </span></li>
+                </ul>
 
                 <h3 id="discussion-cons"><i class="fa fa-thumbs-o-down"></i><span class="break"></span>Weaknesses</h3>
+                <ul>
+                    <li><span>Little information on country based data. </span></li>
+                    <li><span>Can be difficult to get how many incidents based on the color of the map. </span></li>
+                    <li><span>Data is not normalized in regards to how many people are killed and wounded in comparison with the population. For instance a terror incident in Norway with a population of five million, where 68 fatalities and 60 wounded is is actually very high numbers. </span></li>
+                    <li><span>Minimal use of icons. </span></li>
+                </ul>
 
-                <h3 id="discussion-problems"><i class="fa fa-question"></i><span class="break"></span>Difficulties
+
+                <h3 id="discussion-problems1"><i class="fa fa-question"></i><span class="break"></span>Difficulties
                     Encountered</h3>
+                <ul>
+                    <li><span>Little information on country based data. </span></li>
+                    <li><span>Can be difficult to get how many incidents based on the color of the map. </span></li>
+                    <li><span>Data is not normalized in regards to how many people are killed and wounded in comparison with the population. For instance a terror incident in Norway with a population of five million, where 68 fatalities and 60 wounded is is actually very high numbers. </span></li>
+                    <li><span>Minimal use of icons. </span></li>
+                </ul>
+
+                <h3 id="discussion-problems"><i class="fa fa-question"></i><span class="break"></span>Difficulties Encountered</h3>
 
                 <h4>Big dataset</h4>
 
@@ -494,30 +488,35 @@
                     program. A lot of sweat and frustration went down in order to get sensible information from the
                     set.</p>
 
-                <h4>Symbols</h4>
 
+                <h2 id="conclusion"><i class="fa fa-flag-o"></i><span class="break"></span>Conclusion and further work</h2>
 
-                <h2 id="conclusion"><i class="fa fa-flag-o"></i><span class="break"></span>Conclusion and further work
-                </h2>
+                <p>In this project we have developed a blueprint of how the data visualization of terror data shall look like. For further work and improvement we would like to include countries in the design.  </p>
 
-                <h2 id="contributors"><i class="fa fa-user"></i><span class="break"></span>Visualization Contributors
-                </h2>
+                <h2 id="contributors"><i class="fa fa-user"></i><span class="break"></span>Visualization Contributors</h2>
 
                 <h4>Siri Holtnæs</h4>
                 <ul>
-                    <li><span>x</span></li>
-                    <li><span>y</span></li>
-                    <li><span>z</span></li>
+                    <li><span>Brainstorming</span></li>
+                    <li><span>Mock-up</span></li>
+                    <li><span>Analysed other GTD data viz projects</span></li>
+                    <li><span>Adobe Illustrator side kick</span></li>
+                    <li><span>Website developer</span></li>
+                    <li><span>Report writing</span></li>
+
                 </ul>
 
                 <h4>Rikard Eide</h4>
                 <ul>
-                    <li><span>æ</span></li>
-                    <li><span>ø</span></li>
-                    <li><span>å</span></li>
+                    <li><span>Brainstorming</span></li>
+                    <li><span>Mock-up</span></li>
+                    <li><span>Fixed and normalized the data</span></li>
+                    <li><span>Adobe Illustrator designer</span></li>
+                    <li><span>Report writing</span></li>
                 </ul>
 
-                </p></div><!-- /.col-xs-12 main -->
+                </p>
+            </div><!-- /.col-xs-12 main -->
         </div><!--/.row-->
     </div><!--/.container-->
 </div><!--/.page-container-->
