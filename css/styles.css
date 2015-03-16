@@ -41,12 +41,8 @@ blockquote {
 border-left-color: #F2CE16;
 }
 
-x {
+.red {
   color: #D35F6E
-}
-
-y {
-  text-decoration: 
 }
 
 li {
@@ -80,12 +76,16 @@ h1 {
 }
 
 h2  {
+    padding-top: 40px;
   color:#f9f9f9;
 }
 h3  {
-  color:#f9f9f9;
+    padding-top: 20px;
+
+    color:#f9f9f9;
 }
 h4  {
+    padding-top: 10px;
   color:#f9f9f9;
 }
 

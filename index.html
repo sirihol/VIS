@@ -94,19 +94,38 @@
                 <h2 id="intro">Introduction</h2>
 
                 <blockquote>
-                    <p><em>The greatest value of a picture is when it forces us to notice what we never expected to see. <br>- John W. Tukey</em></p>
+                    <p><em>The greatest value of a picture is when it forces us to notice what we never expected to see.
+                        <br>- John W. Tukey</em></p>
                 </blockquote>
 
-                <p>This website cover the work from the project in the module Visual Thinking and Visualization at the Department of Computer Science at UCT the fall 2015. For the project we chose to do a visualization of terror. Terrorism is a concept that knows no either cultural nor geographical bounds, and a data visualization on this topic would therefore of relevance of all over the world.</p>
+                <p>This website cover the work from the project in the module Visual Thinking and Visualization at the
+                    Department of Computer Science at UCT the fall 2015. For the project we chose to do a visualization
+                    of terror. Terrorism is a concept that knows no either cultural nor geographical bounds, and a data
+                    visualization on this topic would therefore of relevance of all over the world.</p>
 
                 <h3 id="dataset"><i class="fa fa-bar-chart"></i><span class="break"></span>The dataset</h3>
-                <p>Our visualization is using a dataset that comes from the National Consortium for the Study of Terrorism and Responses to Terrorism's (START) <a href="http://www.start.umd.edu/gtd">Global Terrorism Database</a> (GTD), which includes information on terrorist events around the world from 1970 through 2013. “It is currently the most comprehensive unclassified database on over 125,000 terrorist events” <small><a
-                        href="#1">[1]</a></small>.<p/>
 
-                <p>Each of the events consist attributes like date, location, the number of people who were killed and wounded, which weapon that was use, who the target was and many other attributes. Some of the entities have up to 134 attributes.</p>
+                <p>Our visualization is using a dataset that comes from the National Consortium for the Study of
+                    Terrorism and Responses to Terrorism's (START) <a href="http://www.start.umd.edu/gtd">Global
+                        Terrorism Database</a> (GTD), which includes information on terrorist events around the world
+                    from 1970 through 2013. “It is currently the most comprehensive unclassified database on over
+                    125,000 terrorist events”
+                    <small><a
+                            href="#1">[1]</a></small>
+                    .
+                <p/>
 
-                <p><p>We studied the dataset before deciding on our visual queries. As a general pattern,
-                many of the special attributes were empty. Because of these inconsistencies, we only worked with the attributes that were populated in every incident. Another thing that is worth noticing is that in 1993 GTD provides no data, due to <a href="http://www.start.umd.edu/gtd/about/History.aspx">loss of data</a> in an office move. </p>
+                <p>Each of the events consist attributes like date, location, the number of people who were killed and
+                    wounded, which weapon that was use, who the target was and many other attributes. Some of the
+                    entities have up to 134 attributes.</p>
+
+                <p>
+
+                <p>We studied the dataset before deciding on our visual queries. As a general pattern,
+                    many of the special attributes were empty. Because of these inconsistencies, we only worked with the
+                    attributes that were populated in every incident. Another thing that is worth noticing is that in
+                    1993 GTD provides no data, due to <a href="http://www.start.umd.edu/gtd/about/History.aspx">loss of
+                        data</a> in an office move. </p>
 
 
                 <h3 id="queries"><i class="fa fa-eye"></i><span class="break"></span>Visual Queries</h3>
@@ -120,29 +139,56 @@
 
                 <h2 id="process"><i class="fa fa-cog"></i><span class="break"></span>The Design Process</h2>
 
-                <p>Our design process in this project started with a search. We analyzed other visualizations on the topic of terrorism and similar subjects. Next step is exploration, where we played around with the data, sketched and designed a draft solution. We presented the first solution in a prototype evaluation and got suggested improvements for our visualization. After this first iteration, we started improving our design. By combining feedback with new ideas and inspiration we finally finalized our visualization.</p>
+                <p>Our design process in this project started with a search. We analyzed other visualizations on the
+                    topic of terrorism and similar subjects. Next step is exploration, where we played around with the
+                    data, sketched and designed a draft solution. We presented the first solution in a prototype
+                    evaluation and got suggested improvements for our visualization. After this first iteration, we
+                    started improving our design. By combining feedback with new ideas and inspiration we finally
+                    finalized our visualization.</p>
 
                 <h3 id="process-search"><i class="fa fa-search"></i><span class="break"></span>The Search</h3>
 
-                <p>In the creation of a visualization it is really important to do a thorough analysis of existing visualizations. By doing this you avoid "reinventing the wheel", you familiarize yourself with the domain and you get a feeling of what is working and what is not. We have found three other visualizations that we have taken a lot of inspiration from, and which we will present in the following section. </p>
+                <p>In the creation of a visualization it is really important to do a thorough analysis of existing
+                    visualizations. By doing this you avoid "reinventing the wheel", you familiarize yourself with the
+                    domain and you get a feeling of what is working and what is not. We have found three other
+                    visualizations that we have taken a lot of inspiration from, and which we will present in the
+                    following section. </p>
 
                 <y><h4 id="process-search-gtv"> Global Terrorism Visualization</h4></y>
-                <p>For inspiration for our overview of the data we looked at a visualization that is called <a href="http://cse512-14w.github.io/a3-chaoyu-aniket/">Global Terrorism Visualization</a> and was made by Chaoyu Yang and Aniket Handa who have developed a application for exploring the trends and events that shaped the history due to Terrorism. Their visualization consists of a map view together with a bar chart graph of the total number of killed per year as well as a more detailed view of countries.</p>
+                <p>For inspiration for our overview of the data we looked at a visualization that is called <a
+                        href="http://cse512-14w.github.io/a3-chaoyu-aniket/">Global Terrorism Visualization</a> and was
+                    made by Chaoyu Yang and Aniket Handa who have developed a application for exploring the trends and
+                    events that shaped the history due to Terrorism. Their visualization consists of a map view together
+                    with a bar chart graph of the total number of killed per year as well as a more detailed view of
+                    countries.</p>
 
                 <a href="img/gtv.jpg" class="fullsizable" alt="Responsive image">
                     <img alt="gtv" class="img-responsive" src="img/gtv.jpg"></a>
 
 
-                <p class="text-center"><i>Figure 2: Global Terrorism Visualization, a vizualization by Chaoyu Yang and Aniket Handa.</i></p>
+                <p class="text-center"><i>Figure 2: Global Terrorism Visualization, a vizualization by Chaoyu Yang and
+                    Aniket Handa.</i></p>
 
                 <h5 id="gtv-color">Color</h5>
-                Different saturations of red where the intensity represent higher quantity works good to represent the number of killed. It can be difficult to compare two countries that have the same color, but in this case there is the possibility of hovering over specific countries for more precise information. The color of the bar chart that represents the number of killed works really well. When the number is high the color of the bar is darker as well as the size is bigger, this makes it easy to answer visual queries like “have the number of killed in terror incidents increased the last 20 years?”.<p/>
+                Different saturations of red where the intensity represent higher quantity works good to represent the
+                number of killed. It can be difficult to compare two countries that have the same color, but in this
+                case there is the possibility of hovering over specific countries for more precise information. The
+                color of the bar chart that represents the number of killed works really well. When the number is high
+                the color of the bar is darker as well as the size is bigger, this makes it easy to answer visual
+                queries like “have the number of killed in terror incidents increased the last 20 years?”.<p/>
 
                 <h5 id="gtv-exploration">Exploration</h5>
-                <p>The ability to explore the data is done well in this visualization. You both have the opportunity to focus the timeline as well as choosing different countries to explore further or compare to others. We have used this in our design, but with regions instead of countries. </p>
+
+                <p>The ability to explore the data is done well in this visualization. You both have the opportunity to
+                    focus the timeline as well as choosing different countries to explore further or compare to others.
+                    We have used this in our design, but with regions instead of countries. </p>
 
                 <h4 id="process-search-wot"> A World of Terror</h4>
-                <p><a href="http://terror.periscopic.com/">A World of Terror</a> is a graphical look at the 25 most impactful terrorist organizations since 1970. This visualization was made by <a href="http://www.periscopic.com/">Periscopic</a>, and is using the same data that we are using from GTD.</p>
+
+                <p><a href="http://terror.periscopic.com/">A World of Terror</a> is a graphical look at the 25 most
+                    impactful terrorist organizations since 1970. This visualization was made by <a
+                            href="http://www.periscopic.com/">Periscopic</a>, and is using the same data that we are
+                    using from GTD.</p>
 
                 <a href="img/wot.jpg" class="fullsizable">
                     <img alt="wot" class="img-responsive" src="img/wot.jpg"></a>
@@ -152,89 +198,236 @@
 
 
                 <h5 id="wot-space">Space, grouping and shape </h5>
-                <p>The visualization presents a lot of information at once, by showing all the data at one single page. They have made this possible by grouping the different groups on the right hand side, while having a panel with further information on the left hand side. They also offer the possibility of grouping the different terror groups by various attributes, for instance by “longest active group”. By doing so they have made it possible for the user to speed up visual queries as well as getting an overview while having the opportunity to zoom and filter. What we found hard in this grouping, was to compare groups that have approximately the same “impact”. The use of a mini map to show where in the world the attacks took place is also a good feature.</p>
 
-                <p>Each terrorist group consists of a rectangle where both dimensions represent time. The width is a timeline from 1970 to 2013, and the height stretches from December to January. Weirdly enough it is not the other from January to December. The number of incidents is represented by a gray square in the given month of the specific year. The intensity of the square indicates the number of incidents in that given month. Above and below the incident rectangle they have placed colored bar charts indicating the total number of victims in a given year - killed above and wounded below. We found this hard to compare and have tried to improve in our design. </p>
+                <p>The visualization presents a lot of information at once, by showing all the data at one single page.
+                    They have made this possible by grouping the different groups on the right hand side, while having a
+                    panel with further information on the left hand side. They also offer the possibility of grouping
+                    the different terror groups by various attributes, for instance by “longest active group”. By doing
+                    so they have made it possible for the user to speed up visual queries as well as getting an overview
+                    while having the opportunity to zoom and filter. What we found hard in this grouping, was to compare
+                    groups that have approximately the same “impact”. The use of a mini map to show where in the world
+                    the attacks took place is also a good feature.</p>
+
+                <p>Each terrorist group consists of a rectangle where both dimensions represent time. The width is a
+                    timeline from 1970 to 2013, and the height stretches from December to January. Weirdly enough it is
+                    not the other from January to December. The number of incidents is represented by a gray square in
+                    the given month of the specific year. The intensity of the square indicates the number of incidents
+                    in that given month. Above and below the incident rectangle they have placed colored bar charts
+                    indicating the total number of victims in a given year - killed above and wounded below. We found
+                    this hard to compare and have tried to improve in our design. </p>
 
                 <h5 id="wot-color">Color</h5>
 
-                <p>The visualization uses a brown color theme, with red and yellow as contrast colors to highlight some information and make it pop slightly out. By using red and yellow whom are both close to brown (they are each "next to" brown on the color scale), this contrast gets well balanced and the page as a whole is visually appealing to look at. Red is used to represent the number of killed while yellow is used to represent the number of wounded, this makes sense in both cases, as red is often a symbol of danger while yellow can be seen as a intermediate step before danger. Traffic lights have taught us this with great effect.</p>
-
+                <p>The visualization uses a brown color theme, with red and yellow as contrast colors to highlight some
+                    information and make it pop slightly out. By using red and yellow whom are both close to brown (they
+                    are each "next to" brown on the color scale), this contrast gets well balanced and the page as a
+                    whole is visually appealing to look at. Red is used to represent the number of killed while yellow
+                    is used to represent the number of wounded, this makes sense in both cases, as red is often a symbol
+                    of danger while yellow can be seen as a intermediate step before danger. Traffic lights have taught
+                    us this with great effect.</p>
 
 
                 <h4>Global Terrorism 2013</h4>
-                <p><a href="http://bl.ocks.org/anonymous/raw/ca61b9158adc0be885cb/">Global Terrorism 2013</a>, is a data visualization that is highlighting notable terror attacks that happened in 2013. The different incidents are shown in the information box along with a symbol on the map of where that incident happened. This visualization is interactive to the extent that you can drag the timeline and as the year goes by the different incidents is shown in the box. You have to stop the time in order to read about the terror incident. </p>
+
+                <p><a href="http://bl.ocks.org/anonymous/raw/ca61b9158adc0be885cb/">Global Terrorism 2013</a>, is a data
+                    visualization that is highlighting notable terror attacks that happened in 2013. The different
+                    incidents are shown in the information box along with a symbol on the map of where that incident
+                    happened. This visualization is interactive to the extent that you can drag the timeline and as the
+                    year goes by the different incidents is shown in the box. You have to stop the time in order to read
+                    about the terror incident. </p>
 
                 <a href="img/gt13.jpg" class="fullsizable" alt="Responsive image">
                     <img alt="gt13" class="img-responsive" src="img/gt13.jpg"></a>
 
-                <p class="text-center"><i>Figure 3: Global Terrorism 2013 (click image to view large)</i> </p>
+                <p class="text-center"><i>Figure 3: Global Terrorism 2013 (click image to view large)</i></p>
 
-                <p>What we like about this is that they are showing and highlighting specific events. We got the idea of adding a frame of reference to our visualization, and maybe adding specific famous events could work as that. That is why we wanted to analys how this visualization is doing it.</p>
+                <p>What we like about this is that they are showing and highlighting specific events. We got the idea of
+                    adding a frame of reference to our visualization, and maybe adding specific famous events could work
+                    as that. That is why we wanted to analys how this visualization is doing it.</p>
 
-                <p>What we like about this is that while the specific event is shown in the box, the map shows where in the world the terror incident happened, this makes it easier for people to understand what and where. We also like the box of information, but we do not like it as a static thing where all the information in the visualization is stored in it. We would use this box for more "details on command". What we especially do not like about this box is how it occludes with the map behind. </p>
+                <p>What we like about this is that while the specific event is shown in the box, the map shows where in
+                    the world the terror incident happened, this makes it easier for people to understand what and
+                    where. We also like the box of information, but we do not like it as a static thing where all the
+                    information in the visualization is stored in it. We would use this box for more "details on
+                    command". What we especially do not like about this box is how it occludes with the map behind. </p>
 
-                <p>This specific visualization is only showing 2013 but could easily include more years as well. But in this case it is necessary to add some more visualization in order to get an overview. This visualization is great for information about a specific event, but not so good for overview. This is something we will try to improve in our visualization.
+                <p>This specific visualization is only showing 2013 but could easily include more years as well. But in
+                    this case it is necessary to add some more visualization in order to get an overview. This
+                    visualization is great for information about a specific event, but not so good for overview. This is
+                    something we will try to improve in our visualization.
                 </p>
 
 
                 <h3 id="process-exploration"><i class="fa fa-binoculars"></i><span class="break"></span>Exploration</h3>
 
-                <p>Initially we did not have any concrete problem that we wanted to solve. This made it hard to decide upon what data we wanted to present, and also how we wanted to present it. </p>
+                <p>Initially we did not have any concrete problem that we wanted to solve. This made it hard to decide
+                    upon what data we wanted to present, and also how we wanted to present it. </p>
 
                 <h4 id="process-exploration-1">First Iteration</h4>
-                <p>After looking at and analyzing existing visualizations we decided that a good place to start would be to improve the ability to compare different terror groups activities. As a constraint, we wanted to stay away from using maps. In this design we decided to put all of the terror groups alphabetically and present when they have been active on a timeline as well as some information on how many they have killed and wounded. Although the concept of an alphabetical ordering is appealing, we realized it was a bad fit, because things got really messy with elements themselves not being ordered (on length for example). </p>
+
+                <p>After looking at and analyzing existing visualizations we decided that a good place to start would be
+                    to improve the ability to compare different terror groups activities. As a constraint, we wanted to
+                    stay away from using maps. In this design we decided to put all of the terror groups alphabetically
+                    and present when they have been active on a timeline as well as some information on how many they
+                    have killed and wounded. Although the concept of an alphabetical ordering is appealing, we realized
+                    it was a bad fit, because things got really messy with elements themselves not being ordered (on
+                    length for example). </p>
                 <a href="img/TimelineFirst.jpg" class="fullsizable" alt="Responsive image">
                     <img alt="First" class="img-responsive" src="img/TimelineFirst.jpg"></a>
 
-                <p class="text-center"><i>Figure 4: Picture of our first design iteration <small>(click image to view large)</small></i></p>
+                <p class="text-center"><i>Figure 4: Picture of our first design iteration
+                    <small>(click image to view large)</small>
+                </i></p>
 
 
                 <h4 id="process-exploration-2">Second Iteration</h4>
 
-                <p>As seen in the figure above, it is hard to see when the groups were active so we decided to arrange them by when they were active rather than alphabetically. We also changed the color by where in the world the groups are from, so that blue means that the group is from Europe etc. The timeline has been made more clear by increasing the size of each decade.</p>
+                <p>As seen in the figure above, it is hard to see when the groups were active so we decided to arrange
+                    them by when they were active rather than alphabetically. We also changed the color by where in the
+                    world the groups are from, so that blue means that the group is from Europe etc. The timeline has
+                    been made more clear by increasing the size of each decade.</p>
 
                 <a href="img/TimelineSecond.jpg" class="fullsizable" alt="Responsive image">
                     <img alt="First" class="img-responsive" src="img/TimelineSecond.jpg">
                 </a>
 
-                <p class="text-center"><i>Figure 5: Second iteration <small>(click image to view large)</small></i> </p>
+                <p class="text-center"><i>Figure 5: Second iteration
+                    <small>(click image to view large)</small>
+                </i></p>
 
 
                 <h4 id="process-exploration-3">Third Iteration</h4>
 
-                <p>After this iteration we discovered that by using the data from the 25 biggest terrorist groups we only cover 56% of total fatalities. We decided to not focus on the groups and rather focus on geographical regions. This is what we presented in the prototype evaluation. It focuses on different regions and representing the number of killed and wounded as well as the number of incidents per month per year.</p>
+                <p>After this iteration we discovered that by using the data from the 25 biggest terrorist groups we
+                    only cover 56% of total fatalities. We decided to not focus on the groups and rather focus on
+                    geographical regions. This is what we presented in the prototype evaluation. It focuses on different
+                    regions and representing the number of killed and wounded as well as the number of incidents per
+                    month per year.</p>
 
                 <a href="img/prototype.jpg" class="fullsizable" alt="Responsive image">
                     <img alt="prototype" class="img-responsive" src="img/prototype.jpg"></a>
 
-                <p class="text-center"><i>Figure 6: Third iteration and first prototype (click image to view large)</i><p/>
+                <p class="text-center"><i>Figure 6: Third iteration and first prototype (click image to view large)</i>
+
+                <p/>
 
                 <h3 id="process-changes"><i class="fa fa-refresh"></i><span class="break"></span>Changes</h3>
-                <p>During the design process we have had one prototype evaluation in the class, where we presented our design and got suggested changes and improvements. We got a lot of good ideas from this session, which is hopefully reflected in the final design.</p>
-                <h4 id="changes-mantra">Shneiderman's mantra</h4>
-                <p>We have used the <a href="http://www.infovis-wiki.net/index.php/Visual_Information-Seeking_Mantra">Shneiderman's mantra</a> in regards to interactivity, by adding more <x>aggregated worldview</x> information for the overview. We decided to add <x>a map of the world</x> along with a timeline where you can see the <x>total numbers</x> of incidents along with the number of dead and wounded, on a yearly basis. We have added a slider on the timeline for further exploration. The map is reflecting which regions that have been targeted for the period that is chosen by the red slider below the timeline. The slider on the <x>timeline works well as a zoom and filter function</x> for updating the map (but not the graphs). We also want the feature of <x>selecting a specific region</x>. When doing so we display more information about it below the main visualization, using a view similar to the one from our third iteration. Because this was intended for the web, we imagined an "article view" which allows the interested user to dig even deeper. This gives the visualization both a narrative, and more <x>details on demand</x>.</p>
 
-                <p>For more details on demand we want to add another suggested change that we got from the prototype evaluation, a <x>frame of reference</x>. For instance marking 9/11 with a specific symbol. Here we also played with the idea of when you hover over a “landmark” symbol everything that is lower than that will be grayed out and then you can see other events that were greater than that “famous” event.</p>
+                <p>During the design process we have had one prototype evaluation in the class, where we presented our
+                    design and got suggested changes and improvements. We got a lot of good ideas from this session,
+                    which is hopefully reflected in the final design.</p>
+                <h4 id="changes-mantra">Shneiderman's mantra</h4>
+
+                <p>We have used the <a href="http://www.infovis-wiki.net/index.php/Visual_Information-Seeking_Mantra">Shneiderman's
+                    mantra</a> in regards to interactivity, by adding more
+                    <span class="red">aggregated worldview</span>
+                    information for the overview. We decided to add
+                    <span class="red">a map of the world</span>
+                    along with a timeline where you can see the
+                    <span class="red">total numbers</span>
+                    of incidents along with the number of dead and wounded, on a yearly basis. We have added a slider on
+                    the timeline for further exploration. The map is reflecting which regions that have been targeted
+                    for the period that is chosen by the red slider below the timeline. The slider on the
+                    <span class="red">timeline works well as a zoom and filter function</span>
+                    for updating the map (but not the graphs). We also want the feature of
+                    <span class="red">selecting a specific region</span>
+                    . When doing so we display more information about it below the main visualization, using a view
+                    similar to the one from our third iteration. Because this was intended for the web, we imagined an
+                    "article view" which allows the interested user to dig even deeper. This gives the visualization
+                    both a narrative, and more
+                    <span class="red">details on demand</span>
+                    .
+                </p>
+
+                <p>For more details on demand we want to add another suggested change that we got from the prototype
+                    evaluation, a
+                    <span class="red">frame of reference</span>
+                    . For instance marking 9/11 with a specific symbol. Here we also played with the idea of when you
+                    hover over a “landmark” symbol everything that is lower than that will be grayed out and then you
+                    can see other events that were greater than that “famous” event.
+                </p>
 
                 <h4 id="changes-symbols">Symbols</h4>
-                <p>Another improvement that we have added are <x>symbols</x>. We have added symbols for the frame of reference feature representing different target types or landmarks that reflect that terror incident. We have also changed from intensity to <x>shapes</x> with different elongation when representing the number of incidents per month. <p>
-                <a href="img/TimelineSecond.jpg" class="fullsizable" alt="Responsive image">
-                    <img alt="First" class="img-responsive" src="img/logos.jpg">
-                </a>
 
-                <p class="text-center"><i>Figure 5: Second iteration <small>(click image to view large)</small></i> </p>
+                <p>Another improvement that we have added are
+                    <span class="red">symbols</span>
+                    . We have added symbols for the frame of reference feature representing different target types or
+                    landmarks that reflect that terror incident. We have also changed from intensity to
+                    <span class="red">shapes</span>
+                    with different elongation when representing the number of incidents per month.
+                <p>
+                <div style="width: 20%; margin: 0 auto">
+                    <a href="img/logos.jpg" class="fullsizable" alt="Responsive image">
+                        <img alt="First" class="img-responsive" src="img/logos.jpg">
+                    </a>
+                </div>
 
-
+                <p class="text-center"><i>Figure 5: Second iteration
+                    <small>(click image to view large)</small>
+                </i></p>
 
 
                 <h2 id="final"><i class="fa fa-trophy"></i><span class="break"></span>Final design</h2>
+
                 <p>Introduction to final design</p>
 
+                <div class="col-xs-12 col-sm-4">
+                    <a href="img/k1.jpg" class="thumbnail fullsizable">
+                        <img alt="First" src="img/k1.jpg">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="img/k2.jpg" class="thumbnail fullsizable">
+                        <img alt="First" src="img/k2.jpg">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="img/k3.jpg" class="thumbnail fullsizable">
+                        <img alt="First" src="img/k3.jpg">
+                    </a>
+                </div>
 
-                <h3 id="final-functionality"></span>Functionality</h3>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="img/p1.jpg" class="thumbnail fullsizable">
+                        <img alt="First" src="img/p1.jpg">
+                    </a>
 
-                <h4>Overview</h4>
+                    <div class="caption">
+                        <p>This is the base, and the first thing the users will see.</p>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="img/p2.jpg" class="thumbnail fullsizable">
+                        <img alt="First" src="img/p2.jpg">
+                    </a>
+
+                    <div class="caption">
+                        <p>Users have the ability to click both regions on the map, and certain peaks on the graph. The
+                            latter is illustrated here.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="img/p3.jpg" class="thumbnail fullsizable">
+                        <img alt="First" src="img/p3.jpg">
+                    </a>
+                    <div class="caption">
+                        <p>You can click on an item to get details on demand.</p>
+                    </div>
+                </div>
+
+                <div class="clearfix">
+                    <div class="text-center fullzisable">
+                        <h3>Click <a href="img/full.jpg">here</a> to view the full version.</h3>
+                    </div>
+
+                    <h3 id="final-functionality"></span>Functionality</h3>
+
+                    <h4>Overview</h4>
+
+                </div>
+
+
                 <p>Graph with total number of incidents per year.</p>
 
                 <p>Map of the world, where the saturation determine the number of incidents per region. </p>
@@ -243,13 +436,23 @@
 
                 <h4>Zoom and filter</h4>
 
-                <p>Ability to change the timeline, and the number of incidents per region(color on the map will) will change. The number of total killed and wounded will also change when the timeline changes. </p>
+                <p>Ability to change the timeline, and the number of incidents per region(color on the map will) will
+                    change. The number of total killed and wounded will also change when the timeline changes. </p>
 
-                <p>Select region for more information of it. Information about number of killed and wounded in that region based on year. As well as number of incidents per per months per year. The graph of the region is added to the panel, below the map. </p>
+                <p>Select region for more information of it. Information about number of killed and wounded in that
+                    region based on year. As well as number of incidents per per months per year. The graph of the
+                    region is added to the panel, below the map. </p>
 
                 <h4>Details on demand</h4>
 
-                <p>The main graph has some symbols placed above peaks. When you press those symbols you will get an overview of the biggest or most famous event that contributed to that peak. Then if you press the specific incident you will get further information about that incident in a box to the left. The information includes the number of killed and wounded, who did it and who the target was. By doing this, we (finally) get to include countries without having to display them all. The target is denoted by symbols representing the target. We have included the most common target types, see Figure X.</p>
+                <p>The main graph has some symbols placed above peaks. When you press those symbols you will get an
+                    overview of the biggest or most famous event that contributed to that peak. Then if you press the
+                    specific incident you will get further information about that incident in a box to the left. The
+                    information includes the number of killed and wounded, who did it and who the target was. By doing
+                    this, we (finally) get to include countries without having to display them all. The target is
+                    denoted by symbols representing the target. We have included the most common target types, see
+                    Figure X.</p>
+
                 <h2 id="discussion"><i class="fa fa-comments"></i><span class="break"></span>Discussion</h2>
 
                 <p>Introduction to comments</p>
@@ -260,28 +463,45 @@
 
                 <h3 id="discussion-cons"><i class="fa fa-thumbs-o-down"></i><span class="break"></span>Weaknesses</h3>
 
-                <h3 id="discussion-problems"><i class="fa fa-question"></i><span class="break"></span>Difficulties Encountered</h3>
+                <h3 id="discussion-problems"><i class="fa fa-question"></i><span class="break"></span>Difficulties
+                    Encountered</h3>
 
                 <h4>Big dataset</h4>
 
-                <p>We have encountered some difficulties along the way, especially with the dataset. The dataset that we have used is very large. This was as much of a technical challenge as it was a design one; Our computer got to work their fair share in order to sort and do calculations on some 17 million attributes.</p>
+                <p>We have encountered some difficulties along the way, especially with the dataset. The dataset that we
+                    have used is very large. This was as much of a technical challenge as it was a design one; Our
+                    computer got to work their fair share in order to sort and do calculations on some 17 million
+                    attributes.</p>
 
                 <h4>How to visualize countries</h4>
 
-                <p>We found it very difficult to visualize countries. Originally we decided to focus on regions and from there maybe add countries later. But since there are so many countries and we wanted to only show real data in our visualization we did not finish a prototype of different countries. One idea we had was to show the five most targeted countries in the regions by showing that in the information box when hovering over a region. Due to time constraints, we did not add this for our final design though.</p>
+                <p>We found it very difficult to visualize countries. Originally we decided to focus on regions and from
+                    there maybe add countries later. But since there are so many countries and we wanted to only show
+                    real data in our visualization we did not finish a prototype of different countries. One idea we had
+                    was to show the five most targeted countries in the regions by showing that in the information box
+                    when hovering over a region. Due to time constraints, we did not add this for our final design
+                    though.</p>
 
                 <h4>Software</h4>
 
-                <p>We decided early to use Adobe Illustrator as our main design tool, since both group members have experience with it. A problem and challenge that we have encountered has been the possibility to work with the same thing separately. Which have led to "pair designing" (if that is a thing) as well as separating between one that is working on the main file and the other doing smaller tasks on another computer.</p>
+                <p>We decided early to use Adobe Illustrator as our main design tool, since both group members have
+                    experience with it. A problem and challenge that we have encountered has been the possibility to
+                    work with the same thing separately. Which have led to "pair designing" (if that is a thing) as well
+                    as separating between one that is working on the main file and the other doing smaller tasks on
+                    another computer.</p>
 
-                <p>The dataset was originally downloaded as a in Microsoft Excel file, and we decided to stick with that program. A lot of sweat and frustration went down in order to get sensible information from the set.</p>
+                <p>The dataset was originally downloaded as a in Microsoft Excel file, and we decided to stick with that
+                    program. A lot of sweat and frustration went down in order to get sensible information from the
+                    set.</p>
 
                 <h4>Symbols</h4>
 
 
-                <h2 id="conclusion"><i class="fa fa-flag-o"></i><span class="break"></span>Conclusion and further work</h2>
+                <h2 id="conclusion"><i class="fa fa-flag-o"></i><span class="break"></span>Conclusion and further work
+                </h2>
 
-                <h2 id="contributors"><i class="fa fa-user"></i><span class="break"></span>Visualization Contributors</h2>
+                <h2 id="contributors"><i class="fa fa-user"></i><span class="break"></span>Visualization Contributors
+                </h2>
 
                 <h4>Siri Holtnæs</h4>
                 <ul>
@@ -297,7 +517,7 @@
                     <li><span>å</span></li>
                 </ul>
 
-            </div><!-- /.col-xs-12 main -->
+                </p></div><!-- /.col-xs-12 main -->
         </div><!--/.row-->
     </div><!--/.container-->
 </div><!--/.page-container-->
